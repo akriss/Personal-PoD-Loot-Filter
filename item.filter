@@ -5,9 +5,9 @@
 // For Casual and EndGame Players
 
 //Gold
-//ItemDisplay[GOLD<100 CLVL<20]:
-//ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<80)]:
-//ItemDisplay[GOLD<5000 CLVL>79]:
+ItemDisplay[GOLD<100 CLVL<20]: %NAME%
+ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<80)]: %NAME%
+ItemDisplay[GOLD<5000 CLVL>79]: %NAME%
 
 //Throws 35k+
 ItemDisplay[(7tk OR 7bk OR 7ta) (MAG OR RARE OR NMAG) (!ETH AND !INF)]: %GRAY%throw %TAN%[35k]
