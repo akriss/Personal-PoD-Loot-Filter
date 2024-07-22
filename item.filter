@@ -1,13 +1,13 @@
-// Kryszard's Loot Filter ver 2.1
+// My personal custom version of Kryszard's Loot Filter ver 2.1
 //
 // twitch.tv/kryszard
 //
 // For Casual and EndGame Players
 
 //Gold
-ItemDisplay[GOLD<100 CLVL<20]:
-ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<80)]:
-ItemDisplay[GOLD<5000 CLVL>79]:
+//ItemDisplay[GOLD<100 CLVL<20]:
+//ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<80)]:
+//ItemDisplay[GOLD<5000 CLVL>79]:
 
 //Throws 35k+
 ItemDisplay[(7tk OR 7bk OR 7ta) (MAG OR RARE OR NMAG) (!ETH AND !INF)]: %GRAY%throw %TAN%[35k]
@@ -98,9 +98,11 @@ ItemDisplay[skz]: %ORANGE%P %WHITE%Skull %ORANGE%[%GRAY%O%ORANGE%]
 ItemDisplay[aqv CLVL>12]:
 ItemDisplay[aq2 NMAG CLVL>12]:
 ItemDisplay[aq2 MAG CLVL>40]:
+ItemDisplay[aq2 RARE]: %NAME%
 ItemDisplay[cqv CLVL>12]:
 ItemDisplay[cq2 NMAG CLVL>12]:
 ItemDisplay[cq2 MAG CLVL>40]:
+ItemDisplay[cq2 RARE]: %NAME%
 
 //Criclets
 ItemDisplay[EQ7 MAG ETH]: %GRAY%ETH %BLUE%%NAME%
@@ -315,8 +317,10 @@ ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) (NMAG OR RW) SK58>2 (SOCK=0
 ItemDisplay[(wst OR 8ws OR 6ws) (NMAG OR RW) SK58>2 SOCK=0 (!INF AND !SUP)]: %GRAY%[%WHITE%3es%GRAY%] %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[(wst OR 8ws OR 6ws) (NMAG OR RW) SK58>2 SOCK=4]: %GRAY%[%WHITE%3es%GRAY%] %NAME% %TAN%[%SOCKETS%]
 //Faith
-ItemDisplay[amc (NMAG OR RW) TABSK0>2 SOCK=4]: %GRAY%[%WHITE%3bow%GRAY%] %NAME% %TAN%[%SOCKETS%]
-ItemDisplay[amc (NMAG OR RW) TABSK0>2 SOCK=0 (!INF AND !SUP)]: %GRAY%[%WHITE%3bow%GRAY%] %NAME% %TAN%[%SOCKETS%]
+ItemDisplay[amc (NMAG OR RW) TABSK0>1 SOCK=4]: %GRAY%[%WHITE%3bow%GRAY%] %NAME% %TAN%[%SOCKETS%]
+ItemDisplay[amc (NMAG OR RW) TABSK0>1 SOCK=0 (!INF AND !SUP)]: %GRAY%[%WHITE%3bow%GRAY%] %NAME% %TAN%[%SOCKETS%]
+ItemDisplay[amb (NMAG OR RW) TABSK0>1 SOCK=4]: %GRAY%[%WHITE%3bow%GRAY%] %NAME% %TAN%[%SOCKETS%]
+ItemDisplay[amb (NMAG OR RW) TABSK0>1 SOCK=0 (!INF AND !SUP)]: %GRAY%[%WHITE%3bow%GRAY%] %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[6cb SOCK=4]: %NAME% %TAN%[%SOCKETS%]
 //Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7p7) (ETH AND (NMAG OR RW)) (SOCK=4 OR SOCK=5)]: %GRAY%[%WHITE%eth%GRAY%] %NAME% %TAN%[%SOCKETS%]
